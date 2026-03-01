@@ -1,6 +1,0 @@
-
-# build artifacts
-*.img
-*.efi
-*.o
-*.so
