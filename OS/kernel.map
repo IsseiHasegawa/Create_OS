@@ -1,0 +1,98 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0 80200000     1 . = 0x80200000
+80200000 80200000       58     2 .text
+80200000 80200000       10     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.text.boot)
+80200000 80200000        0     1                 .L0 
+80200000 80200000        0     1                 .Lpcrel_hi0
+80200000 80200000        0     1                 $x
+80200000 80200000        0     1                 .L0 
+80200000 80200000        0     1                 boot
+80200008 80200008        0     1                 .L0 
+8020000a 8020000a        0     1                 .L0 
+8020000e 8020000e        0     1                 .L0 
+80200010 80200010        0     1                 .L0 
+80200010 80200010        0     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.text)
+80200010 80200010       48     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.text)
+80200010 80200010        0     1                 .L0 
+80200010 80200010        0     1                 .L0 
+80200010 80200010        0     1                 $x
+80200010 80200010        0     1                 .L0 
+80200010 80200010        6     1                 sbi_call
+80200016 80200016        0     1                 .L0 
+80200016 80200016        0     1                 .L0 
+80200016 80200016       14     1                 putchar
+8020002a 8020002a        0     1                 .L0 
+8020002a 8020002a        0     1                 .L0 
+8020002a 8020002a        0     1                 .L0 
+8020002a 8020002a       2e     1                 kernel_main
+80200032 80200032        0     1                 .L0 
+80200042 80200042        0     1                 .L0 
+80200042 80200042        0     1                 .L0 
+80200046 80200046        0     1                 .L0 
+8020004c 8020004c        0     1                 .L0 
+8020004e 8020004e        0     1                 .L0 
+80200052 80200052        0     1                 .L0 
+80200052 80200052        0     1                 .L0 
+80200056 80200056        0     1                 .L0 
+80200058 80200058        0     1                 .L0 
+80200058 80200058        0     1                 .L0 
+80200058 80200058        f     4 .rodata
+80200058 80200058        f     1         <internal>:(.rodata.str1.1)
+80200068 80200068        0     4 .bss
+80200068 80200068        0     1         __bss = .
+80200068 80200068        0     1         __bss_end = .
+80200068 80200068        0     1 . = ALIGN(4)
+80200068 80200068    20000     1 . += 128 * 1024
+80220068 80220068        0     1 __stack_top = .
+       0        0       4e     1 .riscv.attributes
+       0        0       4e     1         <internal>:(.riscv.attributes)
+       0        0      313     1 .debug_info
+       0        0       6d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_info)
+       0        0        0     1                 .L0 
+       0        0        0     1                 $d
+      6d       6d      2a6     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_info)
+      6d       6d        0     1                 $d
+       0        0      15e     1 .debug_abbrev
+       0        0       21     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_abbrev)
+       0        0        0     1                 .L0 
+       0        0        0     1                 $d
+      21       21      13d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_abbrev)
+      21       21        0     1                 $d
+       0        0       20     1 .debug_aranges
+       0        0       20     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_aranges)
+       0        0        0     1                 $d
+       0        0       fa     1 .debug_line
+       0        0       4e     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_line)
+       0        0        0     1                 .Lline_table_start0
+       0        0        0     1                 $d
+      4e       4e       ac     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_line)
+      4e       4e        0     1                 .Lline_table_start0
+      4e       4e        0     1                 $d
+       0        0       35     1 .debug_line_str
+       0        0       35     1         <internal>:(.debug_line_str)
+       0        0       64     1 .debug_loclists
+       0        0       64     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_loclists)
+       0        0        0     1                 $d
+       c        c        0     1                 .L0 
+       0        0       88     1 .debug_str_offsets
+       0        0       88     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_str_offsets)
+       0        0        0     1                 $d
+       8        8        0     1                 .L0 
+       0        0       d8     1 .debug_str
+       0        0       d8     1         <internal>:(.debug_str)
+       0        0       20     1 .debug_addr
+       0        0       20     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_addr)
+       0        0        0     1                 $d
+       8        8        0     1                 .L0 
+       0        0       3b     1 .comment
+       0        0       3b     1         <internal>:(.comment)
+       0        0       44     4 .debug_frame
+       0        0       44     4         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_frame)
+       0        0        0     1                 .L0 
+       0        0        0     1                 $d
+       0        0      1d0     4 .symtab
+       0        0      1d0     4         <internal>:(.symtab)
+       0        0       d5     1 .shstrtab
+       0        0       d5     1         <internal>:(.shstrtab)
+       0        0       84     1 .strtab
+       0        0       84     1         <internal>:(.strtab)
