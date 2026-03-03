@@ -9,7 +9,7 @@ CFLAGS="-std=c11 -O2 -g3 -Wall -Wextra --target=riscv32-unknown-elf \
 
 # カーネルをビルド（boot.S も一緒にリンク）
 $CC $CFLAGS -Wl,-Tkernel.ld -Wl,-Map=kernel.map -o kernel.elf \
-  boot.S kernel.c
+  boot.S kernel.c common.c
 
 # QEMUを起動（カーネルを読み込む）
 $QEMU -machine virt -bios default -nographic -serial mon:stdio --no-reboot \

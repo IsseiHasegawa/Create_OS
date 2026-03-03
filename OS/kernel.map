@@ -1,7 +1,7 @@
      VMA      LMA     Size Align Out     In      Symbol
        0        0 80200000     1 . = 0x80200000
-80200000 80200000       58     2 .text
-80200000 80200000       10     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.text.boot)
+80200000 80200000      1fc     2 .text
+80200000 80200000       10     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.text.boot)
 80200000 80200000        0     1                 .L0 
 80200000 80200000        0     1                 .Lpcrel_hi0
 80200000 80200000        0     1                 $x
@@ -11,8 +11,8 @@
 8020000a 8020000a        0     1                 .L0 
 8020000e 8020000e        0     1                 .L0 
 80200010 80200010        0     1                 .L0 
-80200010 80200010        0     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.text)
-80200010 80200010       48     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.text)
+80200010 80200010        0     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.text)
+80200010 80200010       4a     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.text)
 80200010 80200010        0     1                 .L0 
 80200010 80200010        0     1                 .L0 
 80200010 80200010        0     1                 $x
@@ -23,76 +23,216 @@
 80200016 80200016       14     1                 putchar
 8020002a 8020002a        0     1                 .L0 
 8020002a 8020002a        0     1                 .L0 
-8020002a 8020002a        0     1                 .L0 
-8020002a 8020002a       2e     1                 kernel_main
-80200032 80200032        0     1                 .L0 
-80200042 80200042        0     1                 .L0 
-80200042 80200042        0     1                 .L0 
-80200046 80200046        0     1                 .L0 
-8020004c 8020004c        0     1                 .L0 
-8020004e 8020004e        0     1                 .L0 
-80200052 80200052        0     1                 .L0 
-80200052 80200052        0     1                 .L0 
-80200056 80200056        0     1                 .L0 
+8020002a 8020002a       30     1                 kernel_main
+8020002e 8020002e        0     1                 .L0 
+80200040 80200040        0     1                 .L0 
+80200040 80200040        0     1                 .L0 
+80200054 80200054        0     1                 .L0 
+80200054 80200054        0     1                 .L0 
 80200058 80200058        0     1                 .L0 
-80200058 80200058        0     1                 .L0 
-80200058 80200058        f     4 .rodata
-80200058 80200058        f     1         <internal>:(.rodata.str1.1)
-80200068 80200068        0     4 .bss
-80200068 80200068        0     1         __bss = .
-80200068 80200068        0     1         __bss_end = .
-80200068 80200068        0     1 . = ALIGN(4)
-80200068 80200068    20000     1 . += 128 * 1024
-80220068 80220068        0     1 __stack_top = .
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a      1a2     2         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.text)
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a        0     1                 $x
+8020005a 8020005a        0     1                 .L0 
+8020005a 8020005a      1a2     1                 printf
+80200076 80200076        0     1                 .L0 
+802000a0 802000a0        0     1                 .L0 
+802000b0 802000b0        0     1                 .L0 
+802000b0 802000b0        0     1                 .L0 
+802000b4 802000b4        0     1                 .L0 
+802000b4 802000b4        0     1                 .L0 
+802000b6 802000b6        0     1                 .L0 
+802000ba 802000ba        0     1                 .L0 
+802000be 802000be        0     1                 .L0 
+802000c2 802000c2        0     1                 .L0 
+802000c2 802000c2        0     1                 .L0 
+802000c4 802000c4        0     1                 .L0 
+802000c4 802000c4        0     1                 .L0 
+802000c6 802000c6        0     1                 .L0 
+802000c8 802000c8        0     1                 .L0 
+802000c8 802000c8        0     1                 .L0 
+802000ce 802000ce        0     1                 .L0 
+802000d2 802000d2        0     1                 .L0 
+802000d6 802000d6        0     1                 .L0 
+802000de 802000de        0     1                 .L0 
+802000de 802000de        0     1                 .L0 
+802000ea 802000ea        0     1                 .L0 
+802000ea 802000ea        0     1                 .L0 
+802000ee 802000ee        0     1                 .L0 
+802000ee 802000ee        0     1                 .L0 
+802000f0 802000f0        0     1                 .L0 
+802000f4 802000f4        0     1                 .L0 
+802000f4 802000f4        0     1                 .L0 
+802000fa 802000fa        0     1                 .L0 
+802000fc 802000fc        0     1                 .L0 
+80200100 80200100        0     1                 .L0 
+80200106 80200106        0     1                 .L0 
+80200106 80200106        0     1                 .L0 
+80200106 80200106        0     1                 .L0 
+8020010a 8020010a        0     1                 .L0 
+8020010e 8020010e        0     1                 .L0 
+8020010e 8020010e        0     1                 .L0 
+80200118 80200118        0     1                 .L0 
+8020011c 8020011c        0     1                 .L0 
+8020011e 8020011e        0     1                 .L0 
+80200122 80200122        0     1                 .L0 
+80200124 80200124        0     1                 .L0 
+80200124 80200124        0     1                 .L0 
+8020012a 8020012a        0     1                 .L0 
+8020012c 8020012c        0     1                 .L0 
+80200130 80200130        0     1                 .L0 
+80200132 80200132        0     1                 .L0 
+80200132 80200132        0     1                 .L0 
+80200138 80200138        0     1                 .L0 
+8020013a 8020013a        0     1                 .L0 
+8020013e 8020013e        0     1                 .L0 
+80200140 80200140        0     1                 .L0 
+80200140 80200140        0     1                 .L0 
+80200146 80200146        0     1                 .L0 
+80200148 80200148        0     1                 .L0 
+8020014c 8020014c        0     1                 .L0 
+8020014e 8020014e        0     1                 .L0 
+8020014e 8020014e        0     1                 .L0 
+80200154 80200154        0     1                 .L0 
+80200156 80200156        0     1                 .L0 
+8020015a 8020015a        0     1                 .L0 
+8020015c 8020015c        0     1                 .L0 
+8020015c 8020015c        0     1                 .L0 
+80200162 80200162        0     1                 .L0 
+80200164 80200164        0     1                 .L0 
+80200168 80200168        0     1                 .L0 
+8020016a 8020016a        0     1                 .L0 
+8020016a 8020016a        0     1                 .L0 
+80200170 80200170        0     1                 .L0 
+80200172 80200172        0     1                 .L0 
+80200176 80200176        0     1                 .L0 
+80200178 80200178        0     1                 .L0 
+80200178 80200178        0     1                 .L0 
+8020017a 8020017a        0     1                 .L0 
+8020017c 8020017c        0     1                 .L0 
+80200180 80200180        0     1                 .L0 
+80200180 80200180        0     1                 .L0 
+80200182 80200182        0     1                 .L0 
+80200182 80200182        0     1                 .L0 
+80200184 80200184        0     1                 .L0 
+80200186 80200186        0     1                 .L0 
+80200186 80200186        0     1                 .L0 
+80200186 80200186        0     1                 .L0 
+80200190 80200190        0     1                 .L0 
+80200194 80200194        0     1                 .L0 
+8020019a 8020019a        0     1                 .L0 
+8020019a 8020019a        0     1                 .L0 
+8020019a 8020019a        0     1                 .L0 
+802001a0 802001a0        0     1                 .L0 
+802001a0 802001a0        0     1                 .L0 
+802001a4 802001a4        0     1                 .L0 
+802001a6 802001a6        0     1                 .L0 
+802001aa 802001aa        0     1                 .L0 
+802001aa 802001aa        0     1                 .L0 
+802001aa 802001aa        0     1                 .L0 
+802001b0 802001b0        0     1                 .L0 
+802001b0 802001b0        0     1                 .L0 
+802001b2 802001b2        0     1                 .L0 
+802001b4 802001b4        0     1                 .L0 
+802001b6 802001b6        0     1                 .L0 
+802001be 802001be        0     1                 .L0 
+802001c4 802001c4        0     1                 .L0 
+802001c4 802001c4        0     1                 .L0 
+802001d2 802001d2        0     1                 .L0 
+802001d2 802001d2        0     1                 .L0 
+802001d8 802001d8        0     1                 .L0 
+802001d8 802001d8        0     1                 .L0 
+802001d8 802001d8        0     1                 .L0 
+802001de 802001de        0     1                 .L0 
+802001de 802001de        0     1                 .L0 
+802001de 802001de        0     1                 .L0 
+802001e2 802001e2        0     1                 .L0 
+802001f8 802001f8        0     1                 .L0 
+802001fc 802001fc        0     1                 .L0 
+802001fc 802001fc        0     1                 .L0 
+802001fc 802001fc       32     4 .rodata
+802001fc 802001fc       32     1         <internal>:(.rodata.str1.1)
+80200230 80200230        0     4 .bss
+80200230 80200230        0     1         __bss = .
+80200230 80200230        0     1         __bss_end = .
+80200230 80200230        0     1 . = ALIGN(4)
+80200230 80200230    20000     1 . += 128 * 1024
+80220230 80220230        0     1 __stack_top = .
        0        0       4e     1 .riscv.attributes
        0        0       4e     1         <internal>:(.riscv.attributes)
-       0        0      313     1 .debug_info
-       0        0       6d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_info)
+       0        0      406     1 .debug_info
+       0        0       6d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.debug_info)
        0        0        0     1                 .L0 
        0        0        0     1                 $d
-      6d       6d      2a6     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_info)
+      6d       6d      24b     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_info)
       6d       6d        0     1                 $d
-       0        0      15e     1 .debug_abbrev
-       0        0       21     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_abbrev)
+     2b8      2b8      14e     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_info)
+     2b8      2b8        0     1                 $d
+       0        0      282     1 .debug_abbrev
+       0        0       21     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.debug_abbrev)
        0        0        0     1                 .L0 
        0        0        0     1                 $d
-      21       21      13d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_abbrev)
+      21       21      15a     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_abbrev)
       21       21        0     1                 $d
+     17b      17b      107     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_abbrev)
+     17b      17b        0     1                 $d
        0        0       20     1 .debug_aranges
-       0        0       20     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_aranges)
+       0        0       20     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.debug_aranges)
        0        0        0     1                 $d
-       0        0       fa     1 .debug_line
-       0        0       4e     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-2f49e6.o:(.debug_line)
+       0        0      2d7     1 .debug_line
+       0        0       4e     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/boot-56d181.o:(.debug_line)
        0        0        0     1                 .Lline_table_start0
        0        0        0     1                 $d
-      4e       4e       ac     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_line)
+      4e       4e       b5     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_line)
       4e       4e        0     1                 .Lline_table_start0
       4e       4e        0     1                 $d
-       0        0       35     1 .debug_line_str
-       0        0       35     1         <internal>:(.debug_line_str)
-       0        0       64     1 .debug_loclists
-       0        0       64     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_loclists)
+     103      103      1d4     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_line)
+     103      103        0     1                 .Lline_table_start0
+     103      103        0     1                 $d
+       0        0       47     1 .debug_line_str
+       0        0       47     1         <internal>:(.debug_line_str)
+       0        0      17b     1 .debug_loclists
+       0        0       4e     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_loclists)
        0        0        0     1                 $d
        c        c        0     1                 .L0 
-       0        0       88     1 .debug_str_offsets
-       0        0       88     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_str_offsets)
+      4e       4e      12d     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_loclists)
+      4e       4e        0     1                 $d
+      5a       5a        0     1                 .L0 
+       0        0       d4     1 .debug_str_offsets
+       0        0       80     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_str_offsets)
        0        0        0     1                 $d
        8        8        0     1                 .L0 
-       0        0       d8     1 .debug_str
-       0        0       d8     1         <internal>:(.debug_str)
-       0        0       20     1 .debug_addr
-       0        0       20     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_addr)
+      80       80       54     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_str_offsets)
+      80       80        0     1                 $d
+      88       88        0     1                 .L0 
+       0        0      12e     1 .debug_str
+       0        0      12e     1         <internal>:(.debug_str)
+       0        0       78     1 .debug_addr
+       0        0       28     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_addr)
        0        0        0     1                 $d
        8        8        0     1                 .L0 
+      28       28       50     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_addr)
+      28       28        0     1                 $d
+      30       30        0     1                 .L0 
        0        0       3b     1 .comment
        0        0       3b     1         <internal>:(.comment)
-       0        0       44     4 .debug_frame
-       0        0       44     4         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-aaaad4.o:(.debug_frame)
+       0        0       a4     4 .debug_frame
+       0        0       4c     4         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/kernel-b6d2a1.o:(.debug_frame)
        0        0        0     1                 .L0 
        0        0        0     1                 $d
-       0        0      1d0     4 .symtab
-       0        0      1d0     4         <internal>:(.symtab)
-       0        0       d5     1 .shstrtab
-       0        0       d5     1         <internal>:(.shstrtab)
-       0        0       84     1 .strtab
-       0        0       84     1         <internal>:(.strtab)
+      4c       4c       58     4         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_frame)
+      4c       4c        0     1                 .L0 
+      4c       4c        0     1                 $d
+       0        0       1b     1 .debug_rnglists
+       0        0       1b     1         /var/folders/y0/2n027hfx21v_bhfbk55hbnp80000gn/T/common-3645f1.o:(.debug_rnglists)
+       0        0        0     1                 $d
+       c        c        0     1                 .L0 
+       0        0      2d0     4 .symtab
+       0        0      2d0     4         <internal>:(.symtab)
+       0        0       e5     1 .shstrtab
+       0        0       e5     1         <internal>:(.shstrtab)
+       0        0       be     1 .strtab
+       0        0       be     1         <internal>:(.strtab)
